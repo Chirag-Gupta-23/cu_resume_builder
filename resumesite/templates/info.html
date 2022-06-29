@@ -1,0 +1,27 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume Builder</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="The Curriculum Vitae of Sakshi-Aafiya-Hasti Bloggs." />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/lumen/bootstrap.min.css" integrity="sha512-iNpepALP/QVjr2YQZjyaBe4OTIhoWvAjaYckFcgq87c9s4h5Y3ZzB7AQJiOjcd4uNLj9MvOk5E8Dsh5SRn0zsg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body style="padding:20px;">
+    <h1 class="mt-2" style="text-align:center;font-weight:bolder;color:steelblue;">Welcome to CU Resume Builder!!!</h1>
+    <hr class="mt-0 mb-4">
+    <!--     <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type='Submit'>Submit</button>
+        
+    </form> -->
+    {% crispy form form.helper %}
+</body>
+
+</html>
